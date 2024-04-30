@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VanillaSnope</title>
+    <link rel="icon" type="image/x-icon" href="flash.ico">
 </head>
 <body style="background-color: rgb(30, 31, 110);">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <div style="margin:auto;width:35%;background-color: rgb(255, 255, 255);">
         <object style="margin:auto;">
-            <embed src="websitebanner.swf" width="660" height="195" style="margin:auto;"/>
+            <embed src="websitebanner.swf" width="660" height="195" style="margin:auto;margin-right:auto;margin-left:auto;display:block;"/>
         </object>
-        <div style="background-color: rgb(255, 72, 72);margin:left;width:40%;">
-            <p style="color:rgb(83, 0, 0);text-align: center;">
+        <div id="parent" style="display:flex;">
+        <div id="child1">
+        <div style="background-color: rgb(255, 136, 136);margin:left;width:100%;">
+            <p style="color:rgb(255, 255, 255);text-align: center;background-color: red;">
                 Flash
             </p>
         <u>
@@ -22,7 +25,7 @@
         </u>
 <p>
     <a href="killthecolin.html">
-    Kill the Colin </a><br> ...
+    Kill the Colin </a>
 </p>
 
 <u>
@@ -31,23 +34,31 @@
     </p>
 </u>
 <p>
-<a href="meetthecolin.html">Meet the colin </a><br> <a href="thehunt.html">The Hunt </a><br> ...
+<a href="meetthecolin.html">Meet the colin </a><br> <a href="thehunt.html">The Hunt </a><br>
     </p>
     </div>
-    <div style="background-color: rgb(0, 216, 29);margin:left;width:40%;">
-<p style="text-align: center;">
-    other
+    <div style="background-color: rgb(157, 255, 170);margin:left;width:100%;">
+<p style="text-align: center;color:rgb(5, 54, 5);background-color: rgb(78, 255, 78);">
+    Other
 </p>
 <a href="blog.html">
 <p>
-    blog
+    blog <br> Isaac and Eddie <br> The Colin Series <br> Maze of Fortune
 </p>
-
 </a>
         </div>
-        <iframe src="blog.html" width="650" height="250" style="margin:auto;">
+</div>
+<div id="child2" style="padding:50px;">
+        <iframe src="blog.html" width="450" height="250" style="margin:auto;">
 
         </iframe>
+        </div>
+        </div>
+        <a href="flashdump.html">
+        <object style="margin:auto;margin-right:auto;margin-left:auto;display:block;">
+        <embed src="theflashdump.swf" width="458" height="227" style="margin:auto;margin-right:auto;margin-left:auto;display:block;">
+        </object>
+        </a>
         <h2>
             MAZE OF FORTUNE COMING SOON!
         </h2>
@@ -59,5 +70,9 @@
         copyright 2024 Isaac Harper
     </p>
     </div>
+</div>
+</div>
+</div>
+
 </body>
 </html>
