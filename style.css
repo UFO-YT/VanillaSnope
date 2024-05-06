@@ -1,13 +1,11 @@
-p {
-    color:yellow;
-}
+
 a:link {
     color:red;
     background-color: transparent;
     text-decoration: none;
 }
 a:visited {
-    color:rgb(131, 0, 0);
+    color:rgb(172, 0, 0);
     background-color: transparent;
     text-decoration: none;
 }
@@ -15,4 +13,7 @@ a:hover {
     color:rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
+}
+p {
+    color:yellow;
 }
