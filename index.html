@@ -5,9 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VanillaSnope</title>
     <link rel="icon" type="image/x-icon" href="flash.ico">
+    <style>
+        
+        /* The Modal (background) */
+        .modal {
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
 </head>
 <body style="background-color: rgb(30, 31, 110);">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    
     <div style="margin:auto;width:35%;background-color: rgb(255, 255, 255);">
 <div class="parent" style="display:flex;">
     <div class="child1">
@@ -15,7 +56,7 @@
             <embed src="rocketshipflash.swf" width="170" height="170" style="margin:auto;margin-right:auto;margin-left:auto;display:block;"/>
         </object>
     </div>
-    <div class="parent2" style="margin-left:20px;">
+    <div class="child2" style="margin-left:20px;">
         <object style="margin:auto;">
             <embed src="websitebanner.swf" width="450" height="195" style="margin:auto;margin-right:auto;margin-left:auto;display:block;"/>
         </object>
@@ -82,6 +123,72 @@
         VanillaSnope Studios Website prototype!
         </p>
         </a>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><img src="x.png" width="60" height="60"></span> <!-- &times; -->
+    <div class="parent" style="display:flex;">
+        <div class="child1">
+            <img src="summerisout.png" width="600" height="500">
+        </div>
+        <div class="child2" style="margin-left:125px;text-align: center;margin-right:100px;">
+            <img src="summerisouttext.png" width="500" height="200">
+            <i>
+                <h2>
+                    You know what that means...
+                </h2>
+            </i>
+            <b>
+                <h2>
+                    More devlopment time!
+                </h2>
+            </b>
+            <h3>
+                With summer now right around the corner we will be able to have WAY more time to work on our projects. This means that all of our content, including our games, will be updated more frequently. <br><br> Expect more updates from us!
+            </h3>
+            <p style="color:grey;">
+                Contact: tomkelpfish@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
         <P STYLE="text-align: center;color:darkgrey">
             meet the studio team: <br> Isaac Harper <br> Cole T. <br> Colin G.
         </P>
