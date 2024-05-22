@@ -5,10 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* The Modal (background) */
+        .modal {
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          background-color: #424242;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #1b1b1b;
+          width: 40%;
+        }
+        
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        </style>
 </head>
 <body style="background-color: rgb(0, 0, 0);">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <div style="margin:auto;width:35%;background-color: rgb(0, 0, 0);">
+        <div style="background-color: rgb(14, 14, 14);">
+            <div class="parent" style="display:flex;">
+                <div class="child1">
+<img src="flashdumplogo.png" width="100" height="100">
+                </div>
+                <div class="child2" style="margin-left:50px;">
+                    <object style="margin:auto;margin-left:auto;margin-right:auto;display:block;">
+                        <embed src="flashdumpmenu.swf" width="250" height="100" style="margin:auto;margin-left:auto;margin-right:auto;display:block;"/>
+                    </object>
+                </div>
+            </div>
+        </div>
         <p style="text-align: center;">
             Club a Seal HD
         </p>
@@ -77,6 +129,175 @@
             </a>
             </div>
             </div>
+    </div>
+</div>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"><img src="x.png" width="60" height="60"></span> <!-- &times; -->
+    <div class="parent" style="display:flex;">
+        <div class="child1" style="margin-top:25px;margin-left:30px;">
+            <img src="bloodandviolence.png" width="250" height="200">
+            <hr style="color:red;">
+            <img src="cursing.png" width="200" height="200">
+        </div>
+        <div class="child2" style="margin-left:50px;text-align: center;margin-right:100px;">
+            <h1 style="color:red;">
+                Uh oh
+            </h1>
+            <i>
+                <h2>
+                    WARNING:
+                </h2>
+            </i>
+            <b>
+                <h2>
+                    This game contains <b>blood, violence,</b> and overall <b>mature themes</b>. It also includes <b>swearing.</b>
+                </h2>
+            </b>
+            <h3>
+                If you're a sensative baby or someone under the age of 15 then please return to the homepage. I am not responsible if your mom grounds you for playing this game!
+            </h3>
+            <a href="index.html">
+                <p style="color:red;">
+                    Homepage
+                </p>
+            </a>
+            <p style="color:grey;">
+                Contact: tomkelpfish@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<hr style="color:rgb(36, 36, 36);margin:auto;width:75%;">
+<p style="text-align: center;">
+        The following comment area is a prototype! Everything here is subject to change!
+</p>
+<div class="comments">
+    <h3 style="text-align: center;color:green;">
+        Comments
+    </h3>
+    <div style="background-color: #1d1d1d;" id="commentbox">
+        <div id="content" style="margin:10px;">
+            <hr style="color:rgb(46, 46, 46);">
+        <div class="parent" style="display:flex;">
+            <div class="child1">
+                <img src="userpfp1.png" width="50" height="50">
+            </div>
+            <div class="child2" style="margin-left:20px;">
+                <h4 style="color:white;">
+                    belkz
+                </h4>
+            </div>
+            <div class="child3" style="margin-left:40px;">
+                <p style="color:rgb(161, 161, 161);">
+                    Fuck those seals. I love this game because I can let out my anger on these poor innocent seals.
+                </p>
+            </div>
+        </div>
+        <p style="font-size: 10px;">
+            Commented:5/21/2024
+        </p>
+        <hr style="color:rgb(46, 46, 46);">
+        <div class="parent" style="display:flex;">
+            <div class="child1">
+                <img src="profile_image_default.jpg" width="50" height="50">
+            </div>
+            <div class="child2" style="margin-left:20px;">
+                <a href="VanillaSnope.html">
+                <h4 style="color:white;">
+                    VanillaSnope
+                </h4>
+                </a>
+            </div>
+            <div class="child2.5" style="margin-left:10px;">
+                <div style="background-color:rgb(9, 87, 83);border:2px solid #000;border-radius:20px;"><p style="color:aqua;font-size:12px;">Developer</p></div>
+            </div>
+            <div class="child3" style="margin-left:40px;">
+                <p style="color:rgb(161, 161, 161);">
+                    Hope you guys enjoy!
+                </p>
+            </div>
+        </div>
+        <p style="font-size: 10px;">
+            Commented:5/21/2024
+        </p>
+        <hr style="color:rgb(46, 46, 46);">
+        <div class="parent" style="display:flex;">
+            <div class="child1">
+                <img src="userpfp2.png" width="50" height="50">
+            </div>
+            <div class="child2" style="margin-left:20px;">
+                <h4 style="color:white;">
+                    Spin2fun
+                </h4>
+            </div>
+            <div class="child3" style="margin-left:40px;">
+                <p style="color:rgb(161, 161, 161);">
+                    Wtf?? This game is actually messed up.
+                </p>
+            </div>
+        </div>
+        <p style="font-size: 10px;">
+            Commented:5/21/2024
+        </p>
+        <hr style="color:rgb(46, 46, 46);">
+        <div class="parent" style="display:flex;">
+            <div class="child1">
+                <img src="userpfp3.png" width="50" height="50">
+            </div>
+            <div class="child2" style="margin-left:20px;">
+                <h4 style="color:white;">
+                    stinksradz
+                </h4>
+            </div>
+            <div class="child3" style="margin-left:40px;">
+                <p style="color:rgb(161, 161, 161);">
+                    LMAO
+                </p>
+            </div>
+        </div>
+        <p style="font-size: 10px;">
+            Commented:5/21/2024
+        </p>
+    </div>
     </div>
 </div>
     <a href="index.html">
